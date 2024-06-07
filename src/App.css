@@ -1,0 +1,13 @@
+.firstcontain{
+    /* border: 1px solid white; */
+   padding-left: 100px;
+  
+    
+}
+
+
+.secondcontain{
+    display: flex;
+    
+    /* background-color: white; */
+}

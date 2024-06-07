@@ -1,0 +1,122 @@
+html {
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+}
+body {
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	color: white;
+
+	font-family: "Poppins", sans-serif;
+	background-image: url("./images/bg10.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow-x: hidden;
+	/* background-color: rgb(20, 16, 16); */
+}
+.logo {
+	/* border: 1px solid white; */
+	display: flex;
+	font-family: "Lobster", sans-serif;
+	font-size: 55px;
+	font-weight: 700;
+	flex: 0.9;
+	color: cyan;
+	/* background-color: rgb(20, 16, 16); */
+}
+
+.headerwrap {
+	transition: all 0.5s ease;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	/* border: 1px solid white; */
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	/* justify-content: space-between; */
+	padding: 25px;
+	align-items: center;
+	height: 100vh;
+	justify-content: center;
+	backdrop-filter: blur(50px);
+	box-shadow: inset 0px 0px 2px cyan;
+	border-radius: 30px;
+	z-index: 2;
+}
+.navlinkcontain {
+	display: flex;
+	flex-direction: column;
+	gap: 45px;
+	align-items: center;
+	/* border: 1px solid white; */
+}
+
+.nlink {
+	font-size: 18px;
+	font-weight: 700;
+	padding: 10px;
+	/* border: 1px solid white; */
+	transition: all 0.3s ease;
+	border-radius: 19px;
+	box-shadow: 1px 2px 2px white;
+	&:hover {
+		box-shadow: 2px 0px 2px cyan;
+		transform: translateY(-6px);
+	}
+}
+@keyframes nlinkround {
+	0% {
+		box-shadow: 1px;
+	}
+}
+.nlink > a {
+	text-decoration: none;
+	color: inherit;
+}
+.social {
+	display: flex;
+	flex: 1;
+	/* border: 1px solid white; */
+	align-items: center;
+	/* display: none; */
+}
+
+.transformed {
+	transform: translateX(-200px);
+}
+.three {
+	position: fixed;
+	top: 40px;
+	right: 15px;
+	scale: 1.5;
+	/* border: 1px solid white; */
+	padding: 20px 5px;
+	z-index: 2;
+	color: cyan;
+	cursor: pointer;
+	/* visibility: hidden; */
+	transition: all 0.2s ease;
+	&:active {
+		color: orange;
+	}
+}
+.mlogo{
+	display: flex;
+	font-family: "Lobster", sans-serif;
+	font-size: 55px;
+	font-weight: 700;
+	color: cyan;
+	position: fixed;
+	top: 25px;
+	left: 15px;
+	/* border: 1px solid white; */
+	z-index: 2;
+	color: cyan;
+	visibility: hidden;
+	transition: all 0.2s ease;
+}

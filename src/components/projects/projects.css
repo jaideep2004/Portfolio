@@ -1,0 +1,140 @@
+#project {
+	scroll-snap-align: center;
+	/* height: 100vh; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* border: 1px solid white; */
+	padding: 10px;
+	scroll-behavior: smooth;
+}
+#project > h1 {
+	font-size: 43px;
+}
+.projectwrap {
+	/* border: 1px solid white; */
+	/* flex-direction: column; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 50px;
+	padding: 25px 90px;
+	/* scroll-snap-align: center; */
+	perspective: 1000px;
+}
+
+.project1 {
+	/* border: 1px solid white; */
+	scroll-snap-align: center;
+	border-radius: 20px;
+	/* padding: 20px; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+transition: all 0.3s ease;
+	gap: 30px;
+	
+&:hover{
+	animation: projectShadow 2s infinite;
+	transform: rotateY(8deg) rotateX(9deg);
+}
+}
+
+@keyframes projectShadow {
+	0% {
+		box-shadow: -5px 0px 0px cyan;
+	}
+	25% {
+		box-shadow: 0px -5px 0px cyan;
+	}
+	50% {
+		box-shadow: 5px 0px 0px cyan;
+	}
+	75% {
+		box-shadow: 0px 5px 0px cyan;
+	}
+	100% {
+		box-shadow: -5px 0px 0px cyan;
+	}
+}
+.imgcontain {
+	perspective: 1000px;
+}
+.pimg {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.ptext {
+	position: absolute;
+	/* border: 1px solid white; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 19px;
+	width: 400px;
+	font-weight: 600;
+	text-wrap: wrap;
+	/* padding: 15px; */
+	transition: all 0.3s ease;
+	border-radius: 10px;
+	/* box-shadow: 2px 2px 4px cyan; */
+	/* backdrop-filter: blur(10px); */
+	opacity: 0;
+}
+.project1:hover .ptext {
+	opacity: 1;
+}
+.project1:hover .limg {
+	filter: brightness(30%);
+}
+
+.prbtn {
+	background-color: black;
+	box-shadow: inset 1px 1px 6px white;
+	/* border: 1px solid white; */
+	padding: 5px;
+	cursor: pointer;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	transition: all 0.3s ease;
+	&:hover {
+		box-shadow: inset 0px 0px 25px cyan;
+		border-top-right-radius: 25px;
+		border-bottom-right-radius: 25px;
+	}
+}
+.prbtn > a {
+	text-decoration: none;
+	color: inherit;
+	padding: 15px 25px;
+	/* border: 1px solid white; */
+}
+
+.limg {
+	/* object-fit: cover; */
+	width: 500px;
+	border-radius: 10px;
+	transition: transform 0.5s;
+	transform-style: preserve-3d;
+	&:hover {
+		transform: rotateY(8deg) rotateX(9deg);
+	}
+	&:active {
+		transform: rotateY(8deg) rotateX(9deg);
+	}
+}
+
+.project-odd .project1 {
+	flex-direction: row-reverse;
+}
+
+.project-even .project1 {
+	flex-direction: row;
+}

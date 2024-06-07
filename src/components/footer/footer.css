@@ -1,0 +1,11 @@
+.footer{
+    /* border: 1px solid white; */
+    scroll-snap-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    
+}

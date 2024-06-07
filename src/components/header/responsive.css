@@ -1,0 +1,127 @@
+@media only screen and (max-width: 768px) {
+	html {
+		scroll-snap-type: none;
+		scroll-behavior: smooth;
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		user-select: none;
+		-webkit-user-select: none; /* Safari */
+		-moz-user-select: none; /* Firefox */
+		-ms-user-select: none; /* Internet Explorer/Edge */
+		-o-user-select: none; /* Opera */
+	}
+	body {
+		background-attachment: scroll;
+		background-repeat: repeat;
+		user-select: none;
+		-webkit-user-select: none; /* Safari */
+		-moz-user-select: none; /* Firefox */
+		-ms-user-select: none; /* Internet Explorer/Edge */
+		-o-user-select: none; /* Opera */
+	}
+
+	/* header */
+
+	.three {
+		visibility: visible;
+	}
+	.mlogo {
+		visibility: visible;
+	}
+
+	/* main */
+	.firstcontain {
+		padding-left: 0px;
+		margin-left: -5px;
+		border: 1px solid white;
+	}
+	#hero {
+		margin-top: 70px;
+		margin-left: -70px;
+		/* margin-right: -80px; */
+	}
+
+	.mainwrap {
+		flex-direction: column;
+	}
+	.name {
+		flex-wrap: wrap;
+		text-align: center;
+	}
+	.name > div:nth-child(1) {
+		/* width: fit-content; */
+		scale: 0.76;
+	}
+	.cscreen {
+		margin-top: -50px;
+		/* margin-left: -10px; */
+		scale: 0.85;
+	}
+	.mainarrow {
+		margin-top: -50px;
+	}
+
+	/* about */
+
+	.aboutwrap {
+		margin-top: 900px;
+		/* margin-top: 390px; */
+		flex-direction: column;
+	}
+
+	.abouttext {
+		width: fit-content;
+		backdrop-filter: blur(0px);
+		background-color: black;
+	}
+
+	/* skills */
+
+	.skillsmain {
+		margin-top: 1350px;
+	}
+	.skillscontainer {
+		margin-left: -90px;
+		margin-right: -90px;
+	}
+	.skillscontainer > h2 {
+		display: none;
+	}
+
+	/* projects */
+
+	#project {
+		margin-top: 440px;
+	}
+	
+	.project1 {
+		scale: 0.75;
+		margin-top: -50px;
+
+		flex-direction: column !important;
+	}
+
+	.ptext {
+		scale: 1.08;
+		text-align: center;
+	}
+	.prbtn {
+		scale: 1.1;
+	}
+
+	/* contact */
+	.maincontact{
+		margin-top: 90px;
+	}
+
+	.contactwrap {
+		flex-direction: column;
+	}
+	.contactform {
+		scale: 0.9;
+	}
+	.contact2 {
+		margin-top: -40px;
+	}
+}
