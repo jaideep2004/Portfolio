@@ -24,6 +24,9 @@ scroll-behavior: smooth;
 	justify-content: center;
 	gap: 20px;
 }
+.abthead{
+	border: 1px solid white;
+}
 
 .abtimg {
 	overflow: hidden;

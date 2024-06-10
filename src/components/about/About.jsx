@@ -8,12 +8,13 @@ const About = () => {
 	useEffect(() => {
 		AOS.init();
 	}, []);
-	
+
 	return (
 		<div id='about'>
 			<div className='aboutwrap'>
 				<div className='profile'>
 					<h1>About Me</h1>
+
 					<div className='abtimg' data-aos='fade-up' data-aos-duration='600'>
 						<img src='./images/p2.png' alt='' />
 					</div>

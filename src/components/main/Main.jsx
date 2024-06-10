@@ -23,6 +23,7 @@ const Main = () => {
 
 	return (
 		<div className='main1' id='hero'>
+			
 			<div className='mainwrap'>
 				<div className='name'>
 					{loading && (

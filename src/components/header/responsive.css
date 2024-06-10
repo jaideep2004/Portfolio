@@ -4,7 +4,6 @@
 		scroll-behavior: smooth;
 		margin: 0;
 		padding: 0;
-		height: 100%;
 		user-select: none;
 		-webkit-user-select: none; /* Safari */
 		-moz-user-select: none; /* Firefox */
@@ -12,21 +11,27 @@
 		-o-user-select: none; /* Opera */
 	}
 	body {
-		background-attachment: scroll;
-		background-repeat: repeat;
+		scroll-behavior: smooth;
 		user-select: none;
-		-webkit-user-select: none; /* Safari */
-		-moz-user-select: none; /* Firefox */
-		-ms-user-select: none; /* Internet Explorer/Edge */
-		-o-user-select: none; /* Opera */
+		-webkit-user-select: none; 
+		-moz-user-select: none; 
+		-ms-user-select: none; 
+		-o-user-select: none; 
+		
 	}
-
+.bg{
+	width: 100vh;
+	height: 100vh;
+}
+	
 	/* header */
 
 	.three {
 		visibility: visible;
 	}
+	
 	.mlogo {
+		/* border: 1px solid white; */
 		visibility: visible;
 	}
 
@@ -94,7 +99,7 @@
 	#project {
 		margin-top: 440px;
 	}
-	
+
 	.project1 {
 		scale: 0.75;
 		margin-top: -50px;
@@ -111,7 +116,7 @@
 	}
 
 	/* contact */
-	.maincontact{
+	.maincontact {
 		margin-top: 90px;
 	}
 

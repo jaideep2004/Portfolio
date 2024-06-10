@@ -28,6 +28,7 @@
 .project1 {
 	/* border: 1px solid white; */
 	scroll-snap-align: center;
+	scroll-behavior: smooth;
 	border-radius: 20px;
 	/* padding: 20px; */
 	display: flex;
@@ -35,6 +36,7 @@
 	justify-content: center;
 transition: all 0.3s ease;
 	gap: 30px;
+	transform-style: preserve-3d;
 	
 &:hover{
 	animation: projectShadow 2s infinite;
@@ -59,9 +61,7 @@ transition: all 0.3s ease;
 		box-shadow: -5px 0px 0px cyan;
 	}
 }
-.imgcontain {
-	perspective: 1000px;
-}
+
 .pimg {
 	position: relative;
 	display: flex;
@@ -79,11 +79,10 @@ transition: all 0.3s ease;
 	width: 400px;
 	font-weight: 600;
 	text-wrap: wrap;
-	/* padding: 15px; */
+	
 	transition: all 0.3s ease;
 	border-radius: 10px;
-	/* box-shadow: 2px 2px 4px cyan; */
-	/* backdrop-filter: blur(10px); */
+	
 	opacity: 0;
 }
 .project1:hover .ptext {
@@ -105,7 +104,7 @@ transition: all 0.3s ease;
 	border-bottom-right-radius: 15px;
 	transition: all 0.3s ease;
 	&:hover {
-		box-shadow: inset 0px 0px 25px cyan;
+		box-shadow: inset 0px 0px 15px cyan;
 		border-top-right-radius: 25px;
 		border-bottom-right-radius: 25px;
 	}
@@ -118,23 +117,14 @@ transition: all 0.3s ease;
 }
 
 .limg {
-	/* object-fit: cover; */
 	width: 500px;
 	border-radius: 10px;
 	transition: transform 0.5s;
-	transform-style: preserve-3d;
-	&:hover {
-		transform: rotateY(8deg) rotateX(9deg);
-	}
-	&:active {
-		transform: rotateY(8deg) rotateX(9deg);
-	}
+	
+	
 }
 
-.project-odd .project1 {
-	flex-direction: row-reverse;
-}
-
-.project-even .project1 {
-	flex-direction: row;
+.projectwrap2{
+	/* border: 1px solid white; */
+	perspective: 1000px;
 }

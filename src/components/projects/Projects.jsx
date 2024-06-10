@@ -50,7 +50,7 @@ const Projects = () => {
 			<div className='projectwrap'>
 			
 				{projects.map((project, index) => (
-					<div key={index} className={index % 2 === 0 ? 'project-even' : 'project-odd'}>
+					<div key={index} className="projectwrap2">
 						<Project
 							src1={project.src1}
 							src2={project.src2}

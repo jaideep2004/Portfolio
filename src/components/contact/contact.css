@@ -28,28 +28,28 @@
 
 	backdrop-filter: blur(2px);
 	transition: all 0.4s ease;
-	animation: rotateShadow1 15s infinite;
+	animation: rotateShadow1 10s infinite;
+
+	
 }
 
 @keyframes rotateShadow1 {
 	0% {
-		box-shadow: 1px 0px 5px white;
+		box-shadow: -2px 0px 3px white;
 	}
-	20% {
-		box-shadow: 0px 1px 5px white;
-	}
-
-	40% {
-		box-shadow: -1px 0px 5px white;
+	25% {
+		box-shadow: 0px -2px 3px white;
 	}
 
-	60% {
-		box-shadow: 0px -1px 5px white;
+	75% {
+		box-shadow: 2px 0px 5px white;
 	}
 
 	100% {
-		box-shadow: 1px 0px 5px white;
+		box-shadow: 0px 2px 5px white;
 	}
+
+	
 }
 .contactform > form {
 	/* border: 1px solid white; */
@@ -132,4 +132,7 @@
 }
 .conpins > i {
 	margin-right: 10px;
+}
+.context{
+	padding: 35px 65px;
 }

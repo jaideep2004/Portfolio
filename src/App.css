@@ -1,16 +1,17 @@
-.firstcontain{
-    /* border: 1px solid white; */
-   padding-left: 100px;
-   background-image: url("./images/bg8.jpg");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-size: cover;
+.firstcontain {
+	/* border: 1px solid white; */
+	padding-left: 100px;
+}
+.bg {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
 }
 
 
-.secondcontain{
-    display: flex;
-    
-    /* background-color: white; */
+.secondcontain {
+	display: flex;
+
+	/* background-color: white; */
 }
