@@ -59,7 +59,7 @@ const Contact = () => {
 				</div>
 				<div className='contact2'>
 					<a
-						href='https://drive.google.com/file/d/10QzdEWfq9DpQMTp9XlEz1OSAaIZBv5uT/view?usp=sharing'
+						href='https://drive.google.com/file/d/19vij-0lsCQ4GeNiAX5Ebh-GXdUyYP0VV/view?usp=sharing'
 						className='conpins'
 						data-aos='fade-up'
 						data-aos-duration='600'>
