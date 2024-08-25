@@ -5,8 +5,9 @@
 	justify-content: center;
 	height: 100vh;
 	scroll-snap-align: center;
-    padding: 10px;
+    /* padding: 10px; */
 	/* border: 1px solid white; */
+	/* padding-left: 50px; */
 }
 .skillsmain > h1 {
 	font-size: 43px;
@@ -17,9 +18,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 40px;
+	gap: 50px;
 	flex-wrap: wrap;
 	padding: 25px 90px;
+	margin-left: 50px;
 }
 .skillscontainer>h2{
 	font-size: 30px;
@@ -31,7 +33,7 @@
 }
 
 .skillcapsule {
-	/* border: 1px solid black; */
+	/* border: 1px solid white; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -43,6 +45,7 @@
 	color: #333;
 	border-radius: 10px;
 	position: relative;
+	overflow: hidden;
 }
 
 .fill {
@@ -52,7 +55,7 @@
 	left: 0;
 	width: 100%;
 	background-color: cyan;
-	transition: height 3s ease;
+	/* transition: height 1s ease; */
 	z-index: -1;
 }
 

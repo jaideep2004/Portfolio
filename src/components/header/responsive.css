@@ -13,23 +13,22 @@
 	body {
 		scroll-behavior: smooth;
 		user-select: none;
-		-webkit-user-select: none; 
-		-moz-user-select: none; 
-		-ms-user-select: none; 
-		-o-user-select: none; 
-		
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
 	}
-.bg{
-	width: 100vh;
-	height: 100vh;
-}
-	
+	.bg {
+		width: 100vh;
+		height: 100vh;
+	}
+
 	/* header */
 
 	.three {
 		visibility: visible;
 	}
-	
+
 	.mlogo {
 		/* border: 1px solid white; */
 		visibility: visible;
@@ -37,14 +36,13 @@
 
 	/* main */
 	.firstcontain {
-		padding-left: 0px;
-		margin-left: -5px;
+		/* margin-left: -110px; */
 		border: 1px solid white;
 	}
 	#hero {
-		margin-top: 70px;
-		margin-left: -70px;
-		/* margin-right: -80px; */
+		margin-top: 65px;
+		margin-left: -58px;
+		/* margin-left: -100px; */
 	}
 
 	.mainwrap {
@@ -55,12 +53,10 @@
 		text-align: center;
 	}
 	.name > div:nth-child(1) {
-		/* width: fit-content; */
 		scale: 0.76;
 	}
 	.cscreen {
-		margin-top: -50px;
-		/* margin-left: -10px; */
+		margin-top: -55px;
 		scale: 0.85;
 	}
 	.mainarrow {
@@ -70,26 +66,30 @@
 	/* about */
 
 	.aboutwrap {
-		margin-top: 900px;
-		/* margin-top: 390px; */
+		margin-top: 700px;
 		flex-direction: column;
+		margin-left: 0px;
 	}
 
 	.abouttext {
+		margin: 0px 15px;
 		width: fit-content;
 		backdrop-filter: blur(0px);
-		background-color: black;
+		background-color: #333;
 	}
 
 	/* skills */
 
 	.skillsmain {
-		margin-top: 1350px;
+		margin-top: 1165px;
+		margin-left: -97px !important;
+		margin-right: -57px !important;
+		h1 {
+			margin-left: 0px !important;
+			margin-right: -40px !important;
+		}
 	}
-	.skillscontainer {
-		margin-left: -90px;
-		margin-right: -90px;
-	}
+	
 	.skillscontainer > h2 {
 		display: none;
 	}
@@ -97,34 +97,44 @@
 	/* projects */
 
 	#project {
-		margin-top: 440px;
+		margin-top: 385px;
 	}
 
-	.project1 {
-		scale: 0.75;
-		margin-top: -50px;
-
-		flex-direction: column !important;
+	.slider-container {
+		margin-top: 90px !important;
+		scale: 2.4 ;
+		
+	}
+	.slider-container:hover{
+		transform: none;
+	}
+	.slidedesc {
+		transform: scale(0.4);
 	}
 
-	.ptext {
-		scale: 1.08;
-		text-align: center;
+	.mobilebtncontain {
+		/* visibility: visible !important; */
+		display: flex !important;
+		margin-top: 90px;
+		gap: 20px;
+		align-items: center;
+		justify-content: center;
 	}
-	.prbtn {
-		scale: 1.1;
+	.slider-button {
+		display: none;
 	}
 
 	/* contact */
 	.maincontact {
-		margin-top: 90px;
+		margin-top: 30px;
 	}
 
 	.contactwrap {
 		flex-direction: column;
 	}
 	.contactform {
-		scale: 0.9;
+		/* margin-left: -25px !important; */
+		scale: 0.85;
 	}
 	.contact2 {
 		margin-top: -40px;

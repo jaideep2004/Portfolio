@@ -35,6 +35,7 @@ const Contact = () => {
 				}
 			);
 	};
+
 	return (
 		<div className='maincontact' id='contact'>
 			<ToastContainer />
@@ -59,7 +60,9 @@ const Contact = () => {
 				</div>
 				<div className='contact2'>
 					<a
-						href='https://drive.google.com/file/d/19vij-0lsCQ4GeNiAX5Ebh-GXdUyYP0VV/view?usp=sharing'
+						target='_blank'
+						rel='noopener noreferrer'
+						href='https://drive.google.com/file/d/11-bERt3BYS6r3aAfdq0ZrLN4DW_SM9Hf/view?usp=sharing'
 						className='conpins'
 						data-aos='fade-up'
 						data-aos-duration='600'>
@@ -67,6 +70,8 @@ const Contact = () => {
 						Resume
 					</a>
 					<a
+						target='_blank'
+						rel='noopener noreferrer'
 						href='https://github.com/jaideep2004'
 						className='conpins'
 						data-aos='fade-up'
@@ -75,6 +80,8 @@ const Contact = () => {
 						Github
 					</a>
 					<a
+						target='_blank'
+						rel='noopener noreferrer'
 						href='https://www.linkedin.com/in/jaideep-2oo4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
 						className='conpins'
 						data-aos='fade-up'
@@ -83,6 +90,8 @@ const Contact = () => {
 						Linkedin
 					</a>
 					<a
+						target='_blank'
+						rel='noopener noreferrer'
 						href='https://www.instagram.com/jaisidhu2oo4?utm_source=qr&igsh=MWd2OWVyaXpxdWJ4Yg=='
 						className='conpins'
 						data-aos='fade-up'

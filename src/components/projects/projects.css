@@ -1,12 +1,11 @@
 #project {
 	scroll-snap-align: center;
-	/* height: 100vh; */
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	/* border: 1px solid white; */
-	padding: 10px;
 	scroll-behavior: smooth;
 }
 #project > h1 {
@@ -14,117 +13,163 @@
 }
 .projectwrap {
 	/* border: 1px solid white; */
-	/* flex-direction: column; */
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	flex-wrap: wrap;
 	gap: 50px;
 	padding: 25px 90px;
-	/* scroll-snap-align: center; */
-	perspective: 1000px;
-}
-
-.project1 {
-	/* border: 1px solid white; */
-	scroll-snap-align: center;
-	scroll-behavior: smooth;
-	border-radius: 20px;
-	/* padding: 20px; */
-	display: flex;
-	align-items: center;
-	justify-content: center;
-transition: all 0.3s ease;
-	gap: 30px;
-	transform-style: preserve-3d;
-	
-&:hover{
-	animation: projectShadow 2s infinite;
-	transform: rotateY(8deg) rotateX(9deg);
-}
+	perspective: 2000px;
 }
 
 @keyframes projectShadow {
 	0% {
-		box-shadow: -5px 0px 0px cyan;
+		box-shadow: -5px 0px 0px white;
 	}
 	25% {
 		box-shadow: 0px -5px 0px cyan;
 	}
 	50% {
-		box-shadow: 5px 0px 0px cyan;
+		box-shadow: 5px 0px 0px white;
 	}
 	75% {
 		box-shadow: 0px 5px 0px cyan;
 	}
 	100% {
-		box-shadow: -5px 0px 0px cyan;
+		box-shadow: -5px 0px 0px white;
 	}
 }
 
-.pimg {
+/* slider */
+
+.slider-container {
+	backdrop-filter: blur(10px);
+	border-radius: 20px;
+	/* border: 1px solid red; */
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	max-width: 800px;
+	margin: auto;
+	transition: all 0.3s ease;
+	will-change: transform;
+
+	&:hover {
+		animation: projectShadow 3s infinite;
+		transform: rotateY(5deg) rotateX(8deg);
+	}
+}
+
+.slider-wrapper {
+	/* border: 1px solid green; */
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+	/* z-index: 1; */
+	display: flex;
+}
+
+.slider-slide {
+	/* border: 1px solid lightblue; */
+	min-width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 20px;
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.ptext {
-	position: absolute;
-	/* border: 1px solid white; */
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: 19px;
-	width: 400px;
-	font-weight: 600;
-	text-wrap: wrap;
-	
-	transition: all 0.3s ease;
-	border-radius: 10px;
-	
-	opacity: 0;
-}
-.project1:hover .ptext {
-	opacity: 1;
-}
-.project1:hover .limg {
-	filter: brightness(30%);
+
+.slide-image {
+	width: 100%;
+	height: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	image-rendering: auto;
 }
 
-.prbtn {
-	background-color: black;
-	box-shadow: inset 1px 1px 6px white;
-	/* border: 1px solid white; */
-	padding: 5px;
+.slider-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding: 20px;
 	cursor: pointer;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
-	transition: all 0.3s ease;
+	z-index: 2;
+	border: none;
+	transition: all 0.2s ease-in-out;
+	border-radius: 10px;
+}
+
+.left-button {
+	left: 0px;
 	&:hover {
-		box-shadow: inset 0px 0px 15px cyan;
-		border-top-right-radius: 25px;
-		border-bottom-right-radius: 25px;
+		background-color: orange;
 	}
 }
-.prbtn > a {
-	text-decoration: none;
-	color: inherit;
-	padding: 15px 25px;
-	/* border: 1px solid white; */
+
+.right-button {
+	right: 0px;
+	&:hover {
+		background-color: cyan;
+	}
 }
 
-.limg {
-	width: 500px;
+.slidedesc {
+	border-radius: 20px;
+	backdrop-filter: blur(60px);
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	/* bottom: -40px; */
+	align-items: center;
+	justify-content: center;
+	transition: all 0.2s ease;
+
+	padding: 15px;
+
+	h2 {
+		font-size: 20px;
+	}
+	p {
+		font-size: 17px;
+	}
+	a {
+		color: white;
+		font-size: 17px;
+		background-color: black;
+		text-decoration: none;
+		padding: 10px 20px;
+		cursor: pointer;
+		border-radius: 20px;
+		transition: all 0.2s ease;
+		&:hover {
+			background-color: orange;
+			color: black;
+		}
+	}
+}
+
+.mobilebtncontain {
+	visibility: none;
+	display: none;
+}
+.mobileleftbutton {
+	padding: 25px;
+	border: none;
 	border-radius: 10px;
-	transition: transform 0.5s;
-	
-	
+
+	&:active {
+		background-color: orange;
+	}
 }
 
-.projectwrap2{
-	/* border: 1px solid white; */
-	perspective: 1000px;
+.mobilerightbutton {
+	padding: 25px;
+	border: none;
+	border-radius: 10px;
+	&:active {
+		background-color: cyan;
+	}
 }

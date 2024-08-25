@@ -12,7 +12,7 @@ const LoadingScreen = () => {
 	return (
 		<div
 			className='animatecontain'
-			style={{ backgroundImage: 'url("./images/bg10.jpg")' }}>
+			style={{ backgroundImage: 'url("./images/bg11.jpg")' }}>
 			<div className='ringcontain' data-aos='zoom-in'>
 				<div className='ringN'>
 					<div className='ring2' >

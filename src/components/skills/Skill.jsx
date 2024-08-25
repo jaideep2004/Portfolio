@@ -9,6 +9,8 @@ const Skill = () => {
 		AOS.init();
 	}, []);
 
+	
+
 	const skillsData = {
 		web: [
 			{

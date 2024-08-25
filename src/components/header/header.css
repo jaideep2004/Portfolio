@@ -62,8 +62,10 @@ body {
 	box-shadow: 1px 2px 2px white;
 	&:hover {
 		box-shadow: -2px 0px 2px cyan;
-		transform: translateY(-6px);
-		transform: translateX(4px);
+		/* transform: translateY(-6px);
+		transform: translateX(4px); */
+		scale: 1.12;
+		color: cyan;
 	}
 }
 @keyframes nlinkround {
@@ -98,8 +100,11 @@ body {
 	cursor: pointer;
 	/* visibility: hidden; */
 	transition: all 0.2s ease;
-	&:active {
-		color: orange;
+	&::after {
+		color: red;
+	}
+	&:hover {
+		color: pink;
 	}
 }
 .mlogo {

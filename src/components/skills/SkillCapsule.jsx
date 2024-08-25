@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const SkillCapsule = ({ skill }) => {
-    useEffect(() => {
+	useEffect(() => {
 		AOS.init();
 	}, []);
 
@@ -14,13 +14,19 @@ const SkillCapsule = ({ skill }) => {
 
 	const fillStyle = {
 		height: isHovered || isActive ? `${skill.level}%` : "0%",
-		transition: "height 2s ease", // Smooth transition for filling effect
+		transition: "height 1.2s ease", // Smooth transition for filling effect
+	};
+
+	const handleLinkClick = (e) => {
+		e.preventDefault();
+		window.open(link, "_blank");
 	};
 
 	return (
 		<>
-            <a
-               
+			<a
+				target='_blank'
+				rel='noopener noreferrer'
 				href={skill.link}
 				className='skilllink'
 				onClick={() => setIsActive(!isActive)}>

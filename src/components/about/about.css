@@ -1,20 +1,20 @@
 #about {
 	height: 100vh;
 	scroll-snap-align: center;
-scroll-behavior: smooth;
+	scroll-behavior: smooth;
 	display: flex;
-	padding: 10px;
 	align-items: center;
 	justify-content: center;
-	/* border: 1px solid white; */
+	/* border: 2px solid white; */
+	/* flex: 1; */
 }
 .aboutwrap {
 	/* border: 1px solid white; */
 	display: flex;
-	padding: 20px;
-	gap: 70px;
+	gap: 90px;
 	align-items: center;
 	justify-content: center;
+	margin-left: 80px;
 }
 .profile {
 	/* border: 1px solid white; */
@@ -24,7 +24,7 @@ scroll-behavior: smooth;
 	justify-content: center;
 	gap: 20px;
 }
-.abthead{
+.abthead {
 	border: 1px solid white;
 }
 
@@ -33,15 +33,15 @@ scroll-behavior: smooth;
 	display: flex;
 	/* align-items: center; */
 	justify-content: center;
-	width: 300px;
-	height: 300px;
+	width: 280px;
+	height: 280px;
 	/* border: 1px solid cyan; */
 	border-radius: 100%;
 	object-fit: cover;
 	box-shadow: 2px 2px 2px cyan;
 }
 .abtimg > img {
-	width: 300px;
+	width: 280px;
 	object-fit: cover;
 }
 
@@ -65,7 +65,7 @@ scroll-behavior: smooth;
 	}
 }
 .abouttext {
-	font-size: 19px;
+	font-size: 18px;
 	line-height: 2;
 	color: white;
 }
