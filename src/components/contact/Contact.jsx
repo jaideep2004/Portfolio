@@ -20,9 +20,12 @@ const Contact = () => {
 		e.preventDefault();
 
 		emailjs
-			.sendForm("service_1z0da4o", "template_efe7977", form.current, {
-				publicKey: "ByY67qallsZ4slKux",
-			})
+			.sendForm(
+				"service_1z0da4o",
+				"template_efe7977",
+				form.current,
+				"ByY67qallsZ4slKux"
+			)
 			.then(
 				() => {
 					console.log("SUCCESS!");
@@ -47,13 +50,27 @@ const Contact = () => {
 					<form ref={form} onSubmit={sendEmail}>
 						<div className='con1'>
 							<label>Name</label>
-							<input type='text' name='user_name' className='coninput' />
+							<input
+								type='text'
+								id='name'
+								name='from_name'
+								className='coninput'
+							/>
 
 							<label>Email</label>
-							<input type='email' name='user_email' className='coninput' />
+							<input
+								type='email'
+								id='email'
+								name='user_email'
+								className='coninput'
+							/>
 
 							<label>Message</label>
-							<textarea name='message' className='coninput context' />
+							<textarea
+								name='message'
+								id='message'
+								className='coninput context'
+							/>
 							<input type='submit' value='Send' className='conbtn' />
 						</div>
 					</form>

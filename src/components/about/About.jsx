@@ -28,7 +28,7 @@ const About = () => {
 							<span>Name :</span> Jaideep Singh
 						</li>
 						<li>
-							<span>Education :</span> Second-year student in B.Voc.(Bachelor of
+							<span>Education :</span> Final-year student in B.Voc.(Bachelor of
 							Vocational Studies) Software Development at Khalsa College,
 							Patiala.
 						</li>
